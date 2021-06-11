@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/styles.css">
     <title>Aesop</title>
 </head>
 <body>
-    <header>
-        <p class="header__notification header__notification_beige">Unsere deutschen Geschäfte sind nun wieder regulär oder per Terminvereinbarung geöffnet. Aktuelle Informationen zu unseren Geschäften.</p>
-        <p class="header__notification header__notification_gray">Wir bieten kostenfreien Versand nach Deutschland und Österreich an.</p>
-        <nav>
-            <img src="/img/Aesop-logo.svg" alt="Aesop logo" class="header__logo">
-            <ul class="header__menu">
-                <li><a href="#" class="header__menu__item">Einkaufen</a></li>
-                <li><a href="#" class="header__menu__item">Lesen</a></li>
-                <li><a href="#" class="header__menu__item">Standorte</a></li>
-                <li><a href="#" class="header__menu__item">Suchen</a></li>
-                <li><a href="#" class="header__menu__item">Anmelden</a></li>
-                <li><a href="#" class="header__menu__item">Anmelden</a></li>
-            </ul>
+    <header class="header">
+        <div class="notification-wrapper">
+            <p class="header__notification header__notification_beige">Unsere deutschen Geschäfte sind nun wieder regulär oder per Terminvereinbarung geöffnet. 
+                Aktuelle Informationen zu unseren Geschäften.</p>
+            <p class="header__notification header__notification_grey">Wir bieten kostenfreien Versand nach Deutschland und Österreich an.</p>
+        </div>
+            <nav class="header__nav content-wrap">
+            <div class="header__menu-group">
+                <a href="#" class="header__logo"><img src="/img/Aesop-logo.svg" alt="Aesop logo"></a>
+                <ul class="header__menu">
+                    <li><a href="#" class="header__menu__item">Einkaufen</a></li>
+                    <li><a href="#" class="header__menu__item">Lesen</a></li>
+                    <li><a href="#" class="header__menu__item">Standorte</a></li>
+                    <li><a href="#" class="header__menu__item">Suchen</a></li>
+                </ul>
+            </div>
+            <div class="header__login-group">
+                <a href="#" class="header__login-group__item">Anmelden</a>
+                <a href="#" class="header__login-group__item">Warenkorb</a>
+            </div>
         </nav>
     </header>
-
-    Gebändigt und geformt: Formulierungen mit Funktion
-    Mit Tame Hair Serum und Sculpt Hair Polish stellen wir zwei neue Formulierungen vor, die dabei behilflich sind, die Haare in Szene zu setzen, und gleichzeitig die Haarwurzeln sorgsam einbeziehen.
+    <main>
+        <section class="hero content-wrap">
+            <img class="hero__img" src="/img/hero.jpg" alt="Aesop products">
+            <div class="hero__text-wrap text-wrap">
+                <h2 class="section-heading hero__heading">Gebändigt und geformt: Formulierungen mit Funktion</h2>
+                <p class="section-text hero__text">Mit Tame Hair Serum und Sculpt Hair Polish stellen wir zwei neue Formulierungen vor, 
+                    die dabei behilflich sind, die Haare in Szene zu setzen, und gleichzeitig die Haarwurzeln sorgsam einbeziehen.</p>
+            </div>
+        </section>       
+    </main>
 </body>
 </html>
